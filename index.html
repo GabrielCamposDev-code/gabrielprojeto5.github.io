@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="[Gabriel campos Santana]">
+    <title>sintese</title>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+</head>
+<style>
+
+body {
+    margin: auto;
+}
+
+div {
+text-align: center;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+    
+    background-color: #007BFF; /* Cor azul */
+  border: none; /* Sem borda */
+  color: white; /* Cor do texto */
+  padding: 15px 32px; /* Espaçamento interno */
+  text-decoration: none; /* Sem sublinhado */
+  display: inline-block; /* Exibição inline block */
+  font-size: 14px; /* Tamanho da fonte */
+  margin: 4px 2px; /* Margem */
+  cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+  border-radius: 4px; /* Bordas ligeiramente arredondadas */
+  transition-duration: 0.4s; /* Duração da transição para efeitos */
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 125%;
+}
+
+
+
+.nav {
+    background-color: blue;
+    display: flex;
+    justify-content: space-around;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 185%;
+    transition: background-color 0.3s ease;
+    padding-left: 40px;
+}
+
+
+.link:hover {
+    background-color: gray;
+
+}
+
+
+.simb, link {
+    display: inline-block;
+  vertical-align: middle; /* Alinha verticalmente no meio */
+}
+
+.simb {
+    border-radius: 50%;
+    border: solid black;
+}
+
+@media (max-width: 500px){
+.link{
+    font-size: 125%;
+}
+
+.simb {
+    width: 70;
+    height: 70;
+}
+}
+
+</style>
+<body>
+
+    <nav class="nav"> <!--quem olha essa porra de codigo e acha facil, não sabe o trabalho que tive...-->
+        <a href="paginainicialindex.html">
+        <img src="https://media.istockphoto.com/id/1483611922/pt/vetorial/aphasia-functioning-mechanism-connection-brain-with-speech.jpg?s=612x612&w=0&k=20&c=MiB_D0s9RnQ7z3xzgNYrSQ0y_HXOOCup9EBbMapA6lE=" alt="simbolo do site" width="75" height="75" title="simbolo do site" class="simb">
+    </a>
+
+        <a class="link"href="tutorialindex.html">Tutorial do site</a>
+        <a class="link"href="oqueafasiaindex.html">O que é Afasia ?</a>
+         
+       </nav>
+
+
+    <div>
+    <h1 class="sintaze">Sintese de voz</h1>
+    <p>Digite oque você quer que a voz fale:</p>
+<textarea id="text" rows="4" cols="50" placeholder="Digite o texto aqui..."></textarea><br><br>
+<button onclick="speak()">Falar</button>
+</div>
+
+
+<div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper></div>
+</div>
+
+</body>
+<script>
+     function speak() {
+            var text = document.getElementById('text').value;
+            var utterance = new SpeechSynthesisUtterance(text);
+            utterance.lang = 'pt-BR'; // Definindo o idioma para Português do Brasil
+            speechSynthesis.speak(utterance);
+        }
+
+
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
+</html>
