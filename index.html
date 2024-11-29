@@ -3,19 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="[Gabriel campos Santana]">
-    <title>sintese</title>
+    <meta name="author" content="[Gabriel Campos Santana]">
+    <title>Síntese</title>
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
     <link rel="website icon" href="https://media.istockphoto.com/id/1483611922/pt/vetorial/aphasia-functioning-mechanism-connection-brain-with-speech.jpg?s=612x612&w=0&k=20&c=MiB_D0s9RnQ7z3xzgNYrSQ0y_HXOOCup9EBbMapA6lE=">
 </head>
 <style>
-
 body {
     margin: auto;
 }
 
 div {
-text-align: center;
+    text-align: center;
 }
 
 h1 {
@@ -23,18 +22,17 @@ h1 {
 }
 
 button {
-    
     background-color: #007BFF; /* Cor azul */
-  border: none; /* Sem borda */
-  color: white; /* Cor do texto */
-  padding: 15px 32px; /* Espaçamento interno */
-  text-decoration: none; /* Sem sublinhado */
-  display: inline-block; /* Exibição inline block */
-  font-size: 14px; /* Tamanho da fonte */
-  margin: 4px 2px; /* Margem */
-  cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
-  border-radius: 4px; /* Bordas ligeiramente arredondadas */
-  transition-duration: 0.4s; /* Duração da transição para efeitos */
+    border: none; /* Sem borda */
+    color: white; /* Cor do texto */
+    padding: 15px 32px; /* Espaçamento interno */
+    text-decoration: none; /* Sem sublinhado */
+    display: inline-block; /* Exibição inline block */
+    font-size: 14px; /* Tamanho da fonte */
+    margin: 4px 2px; /* Margem */
+    cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+    border-radius: 4px; /* Bordas ligeiramente arredondadas */
+    transition-duration: 0.4s; /* Duração da transição para efeitos */
 }
 
 p {
@@ -46,7 +44,6 @@ p {
     background-color: blue;
     display: flex;
     justify-content: space-around;
-    
 }
 
 .nav-link {
@@ -63,75 +60,83 @@ p {
 }
 
 .i {
-        border-radius: 50%;
-        border: solid black;
-       }
-
-
-
-@media (max-width: 500px){
-.link{
-    font-size: 125%;
+    border-radius: 50%;
+    border: solid black;
 }
 
-.simb {
-    width: 70;
-    height: 70;
-}
-
-.nav-link {
+@media (max-width: 500px) {
+    .link {
         font-size: 125%;
+    }
+
+    .simb {
+        width: 70;
+        height: 70;
+    }
+
+    .nav-link {
+        font-size: 125%;
+    }
+
+    #text {
+        width: 90%; /* Reduz a largura da caixa de texto */
+        font-size: 90%; /* Ajusta o tamanho da fonte */
+        margin: 0 auto; /* Centraliza horizontalmente */
+        display: block; /* Garante alinhamento */
+    }
+
+    button {
+        width: 90%; /* Botão acompanha a largura da caixinha */
+        font-size: 90%; /* Ajusta tamanho da fonte */
+        padding: 10px; /* Espaçamento interno reduzido */
+        margin: 10px auto; /* Centraliza o botão */
+        display: block; /* Mantém alinhamento */
     }
 }
 
-    @media (max-width: 389px){
+@media (max-width: 389px) {
     .nav-link {
         font-size: 100%;
     }
 }
 
-@media (max-width: 352px){
+@media (max-width: 352px) {
     .nav-link {
         font-size: 85%;
     }
 }
-
 </style>
 <body>
-
     <nav class="navbar">
-    <a href="https://gabrielcamposdev-code.github.io/gabrielprojeto.github.io/">
-    <img src="https://media.istockphoto.com/id/1483611922/pt/vetorial/aphasia-functioning-mechanism-connection-brain-with-speech.jpg?s=612x612&w=0&k=20&c=MiB_D0s9RnQ7z3xzgNYrSQ0y_HXOOCup9EBbMapA6lE=" alt="i" width="75" height="75" class="i">
-</a>
-    <a class="nav-link" href="https://gabrielcamposdev-code.github.io/gabrielprojeto6.github.io/">Tutorial do site</a>
-    <a class="nav-link" href="https://gabrielcamposdev-code.github.io/gabrielprojeto3.github.io/">O que é afasia?</a>
-    <a class= "nav-link" href="https://gabrielcamposdev-code.github.io/projetoafasia7.github.io/">Sobre nós</a>
-</nav>
-
+        <a href="https://gabrielcamposdev-code.github.io/gabrielprojeto.github.io/">
+            <img src="https://media.istockphoto.com/id/1483611922/pt/vetorial/aphasia-functioning-mechanism-connection-brain-with-speech.jpg?s=612x612&w=0&k=20&c=MiB_D0s9RnQ7z3xzgNYrSQ0y_HXOOCup9EBbMapA6lE=" alt="i" width="75" height="75" class="i">
+        </a>
+        <a class="nav-link" href="https://gabrielcamposdev-code.github.io/gabrielprojeto6.github.io/">Tutorial do site</a>
+        <a class="nav-link" href="https://gabrielcamposdev-code.github.io/gabrielprojeto3.github.io/">O que é afasia?</a>
+        <a class="nav-link" href="https://gabrielcamposdev-code.github.io/projetoafasia7.github.io/">Sobre nós</a>
+    </nav>
 
     <div>
-    <h1 class="sintaze">Sintese de voz</h1>
-    <p>Digite oque você quer que a voz fale:</p>
-<textarea id="text" rows="4" cols="50" placeholder="Digite o texto aqui..."></textarea><br><br>
-<button onclick="speak()">Falar</button>
-</div>
+        <h1 class="sintaze">Síntese de voz</h1>
+        <p>Digite o que você quer que a voz fale:</p>
+        <textarea id="text" rows="4" cols="50" placeholder="Digite o texto aqui..."></textarea><br><br>
+        <button onclick="speak()">Falar</button>
+    </div>
 
-
-<div vw class="enabled">
-    <div vw-access-button class="active"></div>
-    <div vw-plugin-wrapper></div>
-</div>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper></div>
+    </div>
 
 </body>
 <script>
-     function speak() {
-            var text = document.getElementById('text').value;
-            var utterance = new SpeechSynthesisUtterance(text);
-            utterance.lang = 'pt-BR'; // Definindo o idioma para Português do Brasil
-            speechSynthesis.speak(utterance);
-        }
+    function speak() {
+        var text = document.getElementById('text').value;
+        var utterance = new SpeechSynthesisUtterance(text);
+        utterance.lang = 'pt-BR'; // Definindo o idioma para Português do Brasil
+        speechSynthesis.speak(utterance);
+    }
 
-
-        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
 </script>
 </html>
